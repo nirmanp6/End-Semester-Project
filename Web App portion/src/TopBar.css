@@ -1,0 +1,101 @@
+/* .logo {
+    font-weight: 900;
+    font-size: 21px;
+    text-transform: uppercase;
+    font-family: 'Aku & Kamu';
+    letter-spacing: 0.15em;
+    color: #b4f9d0;
+    box-shadow: 0 5px 0 #b4f9d0;
+    margin-right: -0.15em;
+} */
+
+#logo img {
+    height: 24px;
+}
+
+.topbar h1,
+.topbar h2,
+.topbar h3 {
+    margin: 0;
+}
+
+.topbar .ant-btn-link {
+    color: white;
+}
+
+.topbar {
+    width: 100%;
+    color: white;
+    z-index: 2;
+    position: absolute;
+    
+    /* background: #424d5c; */
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05); */
+
+    padding: 12px 24px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.city {
+    padding-right: 6px;
+    font-weight: 600;
+    margin-right: .25em;
+}
+
+.state {
+    /* margin-right: .5em; */
+    /* opacity: 0.8; */
+    
+    /* font-weight: 600;
+    font-size: .5em;
+    text-transform: uppercase; */
+}
+
+.city-picker {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.state:after {
+    content: ', ';
+}
+
+.about-modal .logos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about-modal .logos img {
+    width: 100px;
+    height: auto;
+}
+
+.nav-links > button + button {
+    margin-left: 12px;
+}
+
+
+/* Mobile */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .nav-links,
+    .data-tooltip,
+    #logo {
+        display: none;
+    }
+
+    .city-picker {
+        position: relative;
+        transform: none;
+        left: auto;
+    }
+
+    .topbar {
+        padding: 12px;
+    }
+}

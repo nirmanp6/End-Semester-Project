@@ -1,0 +1,84 @@
+.loader-container {
+    --color1: #65df97;
+    --color2: orange;
+    --color3: #996633;
+    --color4: red;
+    
+    --width: 60px;
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    z-index: 2;
+    /* background: rgba(255,255,255,0.7); */
+    background: rgba(37,32,29,0.8);
+    color: white;
+} 
+
+.loader-container h2 {
+  color: white;
+}
+
+.loader {
+  position: relative;
+  margin: 0 auto;
+  max-width: 30%;
+}
+.loader:before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+
+.loader .spinnersvg {
+  width: var(--width);
+  animation: rotate 1.5s linear infinite;
+}
+
+.loader .spinnersvg .path {
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  animation: dash 1s ease-in-out infinite, color 6s ease-in-out infinite;
+  stroke-linecap: round;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124px;
+  }
+}
+
+@keyframes color {
+  100%,
+  0% {
+    stroke: var(--color1);
+  }
+  40% {
+    stroke: var(--color2);
+  }
+  66% {
+    stroke: var(--color3);
+  }
+  80%,
+  90% {
+    stroke: var(--color4);
+  }
+}

@@ -9,36 +9,6 @@
 
 <p align="center"><a href="https://travis-ci.org/mapbox/robosat"><img src="https://travis-ci.org/mapbox/robosat.svg?branch=master" /></a></p>
 
-
-## Table of Contents
-
-1. [Overview](#overview)
-2. [Installation](#installation)
-3. [Usage](#usage)
-    - [extract](#rs-extract)
-    - [cover](#rs-cover)
-    - [download](#rs-download)
-    - [rasterize](#rs-rasterize)
-    - [train](#rs-train)
-    - [export](#rs-export)
-    - [predict](#rs-predict)
-    - [mask](#rs-mask)
-    - [features](#rs-features)
-    - [merge](#rs-merge)
-    - [dedupe](#rs-dedupe)
-    - [serve](#rs-serve)
-    - [weights](#rs-weights)
-    - [compare](#rs-compare)
-    - [subset](#rs-subset)
-4. [Extending](#extending)
-    - [Bring your own imagery](#bring-your-own-imagery)
-    - [Bring your own masks](#bring-your-own-masks)
-    - [Add support for feature in pre-processing](#add-support-for-feature-in-pre-processing)
-    - [Add support for feature in post-processing](#add-support-for-feature-in-post-processing)
-5. [Contributing](#contributing)
-6. [License](#license)
-
-
 ## Overview
 
 RoboSat is an end-to-end pipeline written in Python 3 for feature extraction from aerial and satellite imagery.
